@@ -1,0 +1,175 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 64px 20px;
+}
+
+.app-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 112px;
+    max-width: 100%;
+    height: auto;
+}
+
+.app-box-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.app-box-right {
+    width: 576px;
+    height: 800px;
+}
+
+.app-box-right img {
+    width: 576px;
+    height: 800px;
+}
+
+.form-touch {
+    display: grid;
+    max-width: 100%;
+    gap: 48px;
+}
+
+.title {
+    display: grid;
+    gap: 20px;
+}
+
+.title h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text--color-h1);
+}
+
+.title h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text--color-h2);
+}
+
+.input-touch {
+    display: grid;
+    gap: 24px;
+}
+
+.input-touch label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text--color-laber);
+}
+
+.input-name {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.item-name {
+    display: grid;
+    gap: 6px;
+}
+
+.item-name input {
+    min-width: 224px;
+    height: 48px;
+    border: 1px solid var(--bd-color);
+    border-radius: 8px;
+}
+
+.input-email {
+    display: grid;
+    gap: 24px;
+}
+
+.item-email {
+    display: grid;
+    gap: 6px;
+}
+
+.item-email input {
+    border: 1px solid var(--bd-color);
+    border-radius: 8px;
+    height: 48px;
+}
+
+.input-phone select {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 12px;
+    border: none;
+    color: var(--text--color-h1);
+}
+
+.input-phone input {
+    border: none;
+}
+
+.item-phone {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--bd-color);
+    border-radius: 8px;
+    height: 48px;
+}
+
+.item-message {
+    display: grid;
+    gap: 6px;
+}
+
+.item-message textarea {
+    border: 1px solid var(--bd-color);
+    border-radius: 8px;
+    height: 128px;
+}
+
+.check-box {
+    display: grid;
+    gap: 32px;
+}
+
+.check-box h2,
+a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text--color-h2);
+}
+
+.item-checkbox {
+    display: flex;
+    gap: 12px;
+}
+
+::placeholder {
+    padding-left: 16px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background: #7F56D9;
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 926px) {
+    .app-box-right {
+        display: none;
+    }
+
+    .input-name {
+        display: grid;
+    }
+}
